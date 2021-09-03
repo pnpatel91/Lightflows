@@ -202,4 +202,6 @@
 		{"success":true,"message":"Phone book deleted successfully."}
 
 
-## Postman (https://github.com/onfuro/laravel-api/blob/main/postman_collection/Laravel-Test-Api.postman_collection.json)
+## Postman 
+	
+	(https://github.com/parth11991/Lightflows/tree/main/postman_collection)
