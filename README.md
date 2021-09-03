@@ -50,23 +50,23 @@
  	
  	Data : 
 
- 			{
-			    "name": "Admin",
-			    "email":"new_admin@gmail.com",
-			    "password":"password",
-			    "c_password":"password"
-			}
+		{
+		    "name": "Admin",
+		    "email":"new_admin@gmail.com",
+		    "password":"password",
+		    "c_password":"password"
+		}
 
 	The command will return the following format: 
 
-												{
-												    "success": true,
-												    "data": {
-												        "token": "eyJ0eXAiOiJKV1QiL.....",
-												        "name": "Admin"
-												    },
-												    "message": "User register successfully."
-												}
+		{
+		    "success": true,
+		    "data": {
+		        "token": "eyJ0eXAiOiJKV1QiL.....",
+		        "name": "Admin"
+		    },
+		    "message": "User register successfully."
+		}
 
  2) User Login
  	
@@ -78,10 +78,10 @@
  	
  	Data : 
 
- 			{
-			    "email":"admin@gmail.com",
-			    "password":"password"
-			}
+		{
+		    "email":"admin@gmail.com",
+		    "password":"password"
+		}
 
 	The command will return the following format: 
 
@@ -107,27 +107,27 @@
 
 	The command will return the following format: 
 
-							{
-							    "success": true,
-							    "data": [
-							        {
-							            "id": 1,
-							            "firstName": "Laurie",
-							            "lastName": "Kovacek",
-							            "email": "kris.emily@example.com",
-							            "mobileNumber": "09573975996",
-							            "phoneNumber": "+1-606-729-9793",
-							            "created_by": 1,
-							            "updated_by": 1,
-							            "created_at": "2021-09-03T12:54:26.000000Z",
-							            "updated_at": "2021-09-03T12:54:26.000000Z"
-							        },
-							        {
-							            ....
-							        }
-							    ],
-							    "message": "Phone books retrieved successfully."
-							}
+		{
+		    "success": true,
+		    "data": [
+		        {
+		            "id": 1,
+		            "firstName": "Laurie",
+		            "lastName": "Kovacek",
+		            "email": "kris.emily@example.com",
+		            "mobileNumber": "09573975996",
+		            "phoneNumber": "+1-606-729-9793",
+		            "created_by": 1,
+		            "updated_by": 1,
+		            "created_at": "2021-09-03T12:54:26.000000Z",
+		            "updated_at": "2021-09-03T12:54:26.000000Z"
+		        },
+		        {
+		            ....
+		        }
+		    ],
+		    "message": "Phone books retrieved successfully."
+		}
 
 4) Create
 
@@ -139,12 +139,12 @@
 
  	Data : 
  			
- 			{
-			    "firstName":"Parth",
-			    "lastName":"Patel",
-			    "email":"admin@gmail.com",
-			    "mobileNumber":"07459169377"
-			}
+		{
+		    "firstName":"Parth",
+		    "lastName":"Patel",
+		    "email":"admin@gmail.com",
+		    "mobileNumber":"07459169377"
+		}
 
 	The command will return the following format: 
 	
@@ -175,17 +175,17 @@
 
  	Data : 
 
- 			{
-			    "firstName":"Parth",
-			    "lastName":"Patel",
-			    "email":"webdeveloper.parth@gmail.com",
-			    "mobileNumber":"07459169377",
-			    "phoneNumber" : "+1.934.506.1355"
-			}
+		{
+		    "firstName":"Parth",
+		    "lastName":"Patel",
+		    "email":"webdeveloper.parth@gmail.com",
+		    "mobileNumber":"07459169377",
+		    "phoneNumber" : "+1.934.506.1355"
+		}
 
 	The command will return the following format: 
 	
-			{"success":true,"data":{"id":6,"firstName":"Parth","lastName":"Patel","email":"webdeveloper.parth@gmail.com","mobileNumber":"07459169377","phoneNumber":"+1.934.506.1355","created_by":1,"updated_by":1,"created_at":"2021-09-03T13:34:18.000000Z","updated_at":"2021-09-03T14:00:41.000000Z"},"message":"Phone book updated successfully."}
+		{"success":true,"data":{"id":6,"firstName":"Parth","lastName":"Patel","email":"webdeveloper.parth@gmail.com","mobileNumber":"07459169377","phoneNumber":"+1.934.506.1355","created_by":1,"updated_by":1,"created_at":"2021-09-03T13:34:18.000000Z","updated_at":"2021-09-03T14:00:41.000000Z"},"message":"Phone book updated successfully."}
 
 7) Delete
 
@@ -199,7 +199,7 @@
 
 	The command will return the following format: 
 
-		{"success":true,"message":"Phone book deleted successfully."}
+	{"success":true,"message":"Phone book deleted successfully."}
 
 
 ## Postman 
