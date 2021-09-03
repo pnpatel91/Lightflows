@@ -1,0 +1,326 @@
+{
+	"info": {
+		"_postman_id": "a5ecf483-f152-461c-8441-e6b1fc2323f9",
+		"name": "Laravel-Test-Api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"admin@gmail.com\",\r\n    \"password\":\"password\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/laravel_api/api/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"laravel_api",
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Admin\",\r\n    \"email\":\"new_admin@gmail.com\",\r\n    \"password\":\"password\",\r\n    \"c_password\":\"password\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/laravel_api/api/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"laravel_api",
+						"api",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create API",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiZTE3M2JmYTcyMGVhMzUyOWZhNzM1ZWY5YWUxMjlkNDJjZGI5MGY5ZTY2NGEwOTRhODYwYjYxOGRhYWQ1YmY2ZTAwNTMwNjU5YjgzNzkyNjkiLCJpYXQiOjE2MzA2NzUxMjQuNjE4NzgsIm5iZiI6MTYzMDY3NTEyNC42MTg3ODQsImV4cCI6MTY2MjIxMTEyNC42MDk3NTEsInN1YiI6IjEiLCJzY29wZXMiOltdfQ.4_HhaPrVHuF12hPSgDu_u0MH9jbFe2ERTZhs0djjaeiK7Rp9kYh7WNqRwHJXPNqOWOtYY0p-1TwVHiM1pHKpLnPlME7VvSm2axkJ4tp3wpBvhM7cUkqS68VUKq43I0ooSGuVAIzVoh0OBMcwzYO7xs62U8ZcdQ-2bU2TJ7tirZ-fCqgY1mB8T7R6JjAnzPVjpClwXfd4qHCXYuh4S39_kUlXutNU2OTsEm6zQYszXtlwLnUzbUfb1To35v7d_j-oVF56eJN4EzCd553VaLxQFiN2Ip10V3ZJRRX6G0DyeuaS5zoc1w5XSU1j6-tE9_ulS3esO8IRILVDe0RH2kbxI47WRcy2bKpL7Bj-yhyuI6lGihf1Q9ap85idNotW8lB1kJKjL9ttifZmjWbJ9y0th9TQe4g_gOXYuWOYdFn-AGGdrvg5AeiD2EwVyNIMO-zatnQP4HHCXEK8WUxo_XJX9b9-oBYvzCeWMIgz5q1x6C-GEQSfky1ojtpFvEBKWM1xtwi6StVxEiJQrt6ZjzVZONNaVv3_TRrU2XPShJD2K-TekEtmG3QDFg4rlzc0SfE2g1epFRaCx2iomug0u-SIJzeiGyKFfcCdhDe1HlZoffYoD6gsKyHGcQFng5QnobZn1Udi0KiJNDRU_NLpxobxKb_MWStV0qHnahyD3_WjpIQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstName\":\"Parth\",\r\n    \"lastName\":\"Patel\",\r\n    \"email\":\"admin@gmail.com\",\r\n    \"mobileNumber\":\"07459169377\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/laravel_api/api/phonebooks",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"laravel_api",
+						"api",
+						"phonebooks"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Index - Seach",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiZTE3M2JmYTcyMGVhMzUyOWZhNzM1ZWY5YWUxMjlkNDJjZGI5MGY5ZTY2NGEwOTRhODYwYjYxOGRhYWQ1YmY2ZTAwNTMwNjU5YjgzNzkyNjkiLCJpYXQiOjE2MzA2NzUxMjQuNjE4NzgsIm5iZiI6MTYzMDY3NTEyNC42MTg3ODQsImV4cCI6MTY2MjIxMTEyNC42MDk3NTEsInN1YiI6IjEiLCJzY29wZXMiOltdfQ.4_HhaPrVHuF12hPSgDu_u0MH9jbFe2ERTZhs0djjaeiK7Rp9kYh7WNqRwHJXPNqOWOtYY0p-1TwVHiM1pHKpLnPlME7VvSm2axkJ4tp3wpBvhM7cUkqS68VUKq43I0ooSGuVAIzVoh0OBMcwzYO7xs62U8ZcdQ-2bU2TJ7tirZ-fCqgY1mB8T7R6JjAnzPVjpClwXfd4qHCXYuh4S39_kUlXutNU2OTsEm6zQYszXtlwLnUzbUfb1To35v7d_j-oVF56eJN4EzCd553VaLxQFiN2Ip10V3ZJRRX6G0DyeuaS5zoc1w5XSU1j6-tE9_ulS3esO8IRILVDe0RH2kbxI47WRcy2bKpL7Bj-yhyuI6lGihf1Q9ap85idNotW8lB1kJKjL9ttifZmjWbJ9y0th9TQe4g_gOXYuWOYdFn-AGGdrvg5AeiD2EwVyNIMO-zatnQP4HHCXEK8WUxo_XJX9b9-oBYvzCeWMIgz5q1x6C-GEQSfky1ojtpFvEBKWM1xtwi6StVxEiJQrt6ZjzVZONNaVv3_TRrU2XPShJD2K-TekEtmG3QDFg4rlzc0SfE2g1epFRaCx2iomug0u-SIJzeiGyKFfcCdhDe1HlZoffYoD6gsKyHGcQFng5QnobZn1Udi0KiJNDRU_NLpxobxKb_MWStV0qHnahyD3_WjpIQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/laravel_api/api/phonebooks?firstName=par",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"laravel_api",
+						"api",
+						"phonebooks"
+					],
+					"query": [
+						{
+							"key": "firstName",
+							"value": "par"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Index - All",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiZTE3M2JmYTcyMGVhMzUyOWZhNzM1ZWY5YWUxMjlkNDJjZGI5MGY5ZTY2NGEwOTRhODYwYjYxOGRhYWQ1YmY2ZTAwNTMwNjU5YjgzNzkyNjkiLCJpYXQiOjE2MzA2NzUxMjQuNjE4NzgsIm5iZiI6MTYzMDY3NTEyNC42MTg3ODQsImV4cCI6MTY2MjIxMTEyNC42MDk3NTEsInN1YiI6IjEiLCJzY29wZXMiOltdfQ.4_HhaPrVHuF12hPSgDu_u0MH9jbFe2ERTZhs0djjaeiK7Rp9kYh7WNqRwHJXPNqOWOtYY0p-1TwVHiM1pHKpLnPlME7VvSm2axkJ4tp3wpBvhM7cUkqS68VUKq43I0ooSGuVAIzVoh0OBMcwzYO7xs62U8ZcdQ-2bU2TJ7tirZ-fCqgY1mB8T7R6JjAnzPVjpClwXfd4qHCXYuh4S39_kUlXutNU2OTsEm6zQYszXtlwLnUzbUfb1To35v7d_j-oVF56eJN4EzCd553VaLxQFiN2Ip10V3ZJRRX6G0DyeuaS5zoc1w5XSU1j6-tE9_ulS3esO8IRILVDe0RH2kbxI47WRcy2bKpL7Bj-yhyuI6lGihf1Q9ap85idNotW8lB1kJKjL9ttifZmjWbJ9y0th9TQe4g_gOXYuWOYdFn-AGGdrvg5AeiD2EwVyNIMO-zatnQP4HHCXEK8WUxo_XJX9b9-oBYvzCeWMIgz5q1x6C-GEQSfky1ojtpFvEBKWM1xtwi6StVxEiJQrt6ZjzVZONNaVv3_TRrU2XPShJD2K-TekEtmG3QDFg4rlzc0SfE2g1epFRaCx2iomug0u-SIJzeiGyKFfcCdhDe1HlZoffYoD6gsKyHGcQFng5QnobZn1Udi0KiJNDRU_NLpxobxKb_MWStV0qHnahyD3_WjpIQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/laravel_api/api/phonebooks",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"laravel_api",
+						"api",
+						"phonebooks"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Edit",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiZTE3M2JmYTcyMGVhMzUyOWZhNzM1ZWY5YWUxMjlkNDJjZGI5MGY5ZTY2NGEwOTRhODYwYjYxOGRhYWQ1YmY2ZTAwNTMwNjU5YjgzNzkyNjkiLCJpYXQiOjE2MzA2NzUxMjQuNjE4NzgsIm5iZiI6MTYzMDY3NTEyNC42MTg3ODQsImV4cCI6MTY2MjIxMTEyNC42MDk3NTEsInN1YiI6IjEiLCJzY29wZXMiOltdfQ.4_HhaPrVHuF12hPSgDu_u0MH9jbFe2ERTZhs0djjaeiK7Rp9kYh7WNqRwHJXPNqOWOtYY0p-1TwVHiM1pHKpLnPlME7VvSm2axkJ4tp3wpBvhM7cUkqS68VUKq43I0ooSGuVAIzVoh0OBMcwzYO7xs62U8ZcdQ-2bU2TJ7tirZ-fCqgY1mB8T7R6JjAnzPVjpClwXfd4qHCXYuh4S39_kUlXutNU2OTsEm6zQYszXtlwLnUzbUfb1To35v7d_j-oVF56eJN4EzCd553VaLxQFiN2Ip10V3ZJRRX6G0DyeuaS5zoc1w5XSU1j6-tE9_ulS3esO8IRILVDe0RH2kbxI47WRcy2bKpL7Bj-yhyuI6lGihf1Q9ap85idNotW8lB1kJKjL9ttifZmjWbJ9y0th9TQe4g_gOXYuWOYdFn-AGGdrvg5AeiD2EwVyNIMO-zatnQP4HHCXEK8WUxo_XJX9b9-oBYvzCeWMIgz5q1x6C-GEQSfky1ojtpFvEBKWM1xtwi6StVxEiJQrt6ZjzVZONNaVv3_TRrU2XPShJD2K-TekEtmG3QDFg4rlzc0SfE2g1epFRaCx2iomug0u-SIJzeiGyKFfcCdhDe1HlZoffYoD6gsKyHGcQFng5QnobZn1Udi0KiJNDRU_NLpxobxKb_MWStV0qHnahyD3_WjpIQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstName\":\"Parth\",\r\n    \"lastName\":\"Patel\",\r\n    \"email\":\"webdeveloper.parth@gmail.com\",\r\n    \"mobileNumber\":\"07459169377\",\r\n    \"phoneNumber\" : \"+1.934.506.1355\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/laravel_api/api/phonebooks/6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"laravel_api",
+						"api",
+						"phonebooks",
+						"6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Read",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiZTE3M2JmYTcyMGVhMzUyOWZhNzM1ZWY5YWUxMjlkNDJjZGI5MGY5ZTY2NGEwOTRhODYwYjYxOGRhYWQ1YmY2ZTAwNTMwNjU5YjgzNzkyNjkiLCJpYXQiOjE2MzA2NzUxMjQuNjE4NzgsIm5iZiI6MTYzMDY3NTEyNC42MTg3ODQsImV4cCI6MTY2MjIxMTEyNC42MDk3NTEsInN1YiI6IjEiLCJzY29wZXMiOltdfQ.4_HhaPrVHuF12hPSgDu_u0MH9jbFe2ERTZhs0djjaeiK7Rp9kYh7WNqRwHJXPNqOWOtYY0p-1TwVHiM1pHKpLnPlME7VvSm2axkJ4tp3wpBvhM7cUkqS68VUKq43I0ooSGuVAIzVoh0OBMcwzYO7xs62U8ZcdQ-2bU2TJ7tirZ-fCqgY1mB8T7R6JjAnzPVjpClwXfd4qHCXYuh4S39_kUlXutNU2OTsEm6zQYszXtlwLnUzbUfb1To35v7d_j-oVF56eJN4EzCd553VaLxQFiN2Ip10V3ZJRRX6G0DyeuaS5zoc1w5XSU1j6-tE9_ulS3esO8IRILVDe0RH2kbxI47WRcy2bKpL7Bj-yhyuI6lGihf1Q9ap85idNotW8lB1kJKjL9ttifZmjWbJ9y0th9TQe4g_gOXYuWOYdFn-AGGdrvg5AeiD2EwVyNIMO-zatnQP4HHCXEK8WUxo_XJX9b9-oBYvzCeWMIgz5q1x6C-GEQSfky1ojtpFvEBKWM1xtwi6StVxEiJQrt6ZjzVZONNaVv3_TRrU2XPShJD2K-TekEtmG3QDFg4rlzc0SfE2g1epFRaCx2iomug0u-SIJzeiGyKFfcCdhDe1HlZoffYoD6gsKyHGcQFng5QnobZn1Udi0KiJNDRU_NLpxobxKb_MWStV0qHnahyD3_WjpIQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/laravel_api/api/phonebooks/6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"laravel_api",
+						"api",
+						"phonebooks",
+						"6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiZTE3M2JmYTcyMGVhMzUyOWZhNzM1ZWY5YWUxMjlkNDJjZGI5MGY5ZTY2NGEwOTRhODYwYjYxOGRhYWQ1YmY2ZTAwNTMwNjU5YjgzNzkyNjkiLCJpYXQiOjE2MzA2NzUxMjQuNjE4NzgsIm5iZiI6MTYzMDY3NTEyNC42MTg3ODQsImV4cCI6MTY2MjIxMTEyNC42MDk3NTEsInN1YiI6IjEiLCJzY29wZXMiOltdfQ.4_HhaPrVHuF12hPSgDu_u0MH9jbFe2ERTZhs0djjaeiK7Rp9kYh7WNqRwHJXPNqOWOtYY0p-1TwVHiM1pHKpLnPlME7VvSm2axkJ4tp3wpBvhM7cUkqS68VUKq43I0ooSGuVAIzVoh0OBMcwzYO7xs62U8ZcdQ-2bU2TJ7tirZ-fCqgY1mB8T7R6JjAnzPVjpClwXfd4qHCXYuh4S39_kUlXutNU2OTsEm6zQYszXtlwLnUzbUfb1To35v7d_j-oVF56eJN4EzCd553VaLxQFiN2Ip10V3ZJRRX6G0DyeuaS5zoc1w5XSU1j6-tE9_ulS3esO8IRILVDe0RH2kbxI47WRcy2bKpL7Bj-yhyuI6lGihf1Q9ap85idNotW8lB1kJKjL9ttifZmjWbJ9y0th9TQe4g_gOXYuWOYdFn-AGGdrvg5AeiD2EwVyNIMO-zatnQP4HHCXEK8WUxo_XJX9b9-oBYvzCeWMIgz5q1x6C-GEQSfky1ojtpFvEBKWM1xtwi6StVxEiJQrt6ZjzVZONNaVv3_TRrU2XPShJD2K-TekEtmG3QDFg4rlzc0SfE2g1epFRaCx2iomug0u-SIJzeiGyKFfcCdhDe1HlZoffYoD6gsKyHGcQFng5QnobZn1Udi0KiJNDRU_NLpxobxKb_MWStV0qHnahyD3_WjpIQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/laravel_api/api/phonebooks/5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"laravel_api",
+						"api",
+						"phonebooks",
+						"5"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

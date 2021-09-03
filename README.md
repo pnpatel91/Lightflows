@@ -21,36 +21,45 @@
 ## End Point Url
 
  |POST      | api/register |
- 
+
  |GET|HEAD  | api/user |
- 
+
  |POST | api/login | 
 
+
  |GET|HEAD  | api/phonebooks  | phonebooks.index |
- 
+
  |POST      | api/phonebooks  | phonebooks.store | 
- 
+
  |GET|HEAD  | api/phonebooks/{phonebook}  | phonebooks.show | 
- 
+
  |PUT|PATCH | api/phonebooks/{phonebook}  | phonebooks.update |
- 
+
  |DELETE    | api/phonebooks/{phonebook}  | phonebooks.destroy |
 
 
 ## Support Documentation
 	
  1) User Register
+
  	Url : {Your_Path}/api/register
+
  	Method - POST 
+
  	Body : row
- 	Data : {
+ 	
+ 	Data : 
+
+ 			{
 			    "name": "Admin",
 			    "email":"new_admin@gmail.com",
 			    "password":"password",
 			    "c_password":"password"
 			}
 
-	The command will return the following format: {
+	The command will return the following format: 
+
+												{
 												    "success": true,
 												    "data": {
 												        "token": "eyJ0eXAiOiJKV1QiL.....",
@@ -60,15 +69,23 @@
 												}
 
  2) User Login
+ 	
  	Url : {Your_Path}/api/login
+ 	
  	Method - POST 
+ 	
  	Body : row
- 	Data : {
+ 	
+ 	Data : 
+
+ 			{
 			    "email":"admin@gmail.com",
 			    "password":"password"
 			}
 
-	The command will return the following format: {"success":{"token":"eyJ0eXAiOiJKV1QiL..."}}
+	The command will return the following format: 
+
+		{"success":{"token":"eyJ0eXAiOiJKV1QiL..."}}
 
  Note : When you run each API please check the login , if login is available please use the token for authentication , if you do not have the token please login first in each API to receive the token and use the same token in each API with .
 
@@ -78,12 +95,19 @@
 		}
 
  3) Index
+
  	Url : {Your_Path}/api/phonebooks
+
  	Method - GET|HEAD 
+
  	Body : row
+
  	Data : Null
 
-	The command will return the following format: {
+
+	The command will return the following format: 
+
+							{
 							    "success": true,
 							    "data": [
 							        {
@@ -106,31 +130,52 @@
 							}
 
 4) Create
+
  	Url : {Your_Path}/api/phonebooks
+
  	Method - POST
+
  	Body : row
- 	Data : {
+
+ 	Data : 
+ 			
+ 			{
 			    "firstName":"Parth",
 			    "lastName":"Patel",
 			    "email":"admin@gmail.com",
 			    "mobileNumber":"07459169377"
 			}
 
-	The command will return the following format: {"success":true,"data":{"firstName":"Parth","lastName":"Patel","email":"admin@gmail.com","mobileNumber":"07459169377","created_by":1,"updated_by":1,"updated_at":"2021-09-03T13:34:18.000000Z","created_at":"2021-09-03T13:34:18.000000Z","id":6},"message":"Phone book details stored successfully."}
+	The command will return the following format: 
+	
+		{"success":true,"data":{"firstName":"Parth","lastName":"Patel","email":"admin@gmail.com","mobileNumber":"07459169377","created_by":1,"updated_by":1,"updated_at":"2021-09-03T13:34:18.000000Z","created_at":"2021-09-03T13:34:18.000000Z","id":6},"message":"Phone book details stored successfully."}
  
  5) Read
+
  	Url : {Your_Path}/api/phonebooks/{phonebook}
+
  	Method - GET|HEAD
+
  	Body : row
+
  	Data : null
 
-	The command will return the following format: {"success":true,"data":{"id":6,"firstName":"Parth","lastName":"Patel","email":"webdeveloper.parth@gmail.com","mobileNumber":"07459169377","phoneNumber":"+1.934.506.1355","created_by":1,"updated_by":1,"created_at":"2021-09-03T13:34:18.000000Z","updated_at":"2021-09-03T14:00:41.000000Z"},"message":"Phone book details retrieved successfully."}
+
+	The command will return the following format: 
+	
+		{"success":true,"data":{"id":6,"firstName":"Parth","lastName":"Patel","email":"webdeveloper.parth@gmail.com","mobileNumber":"07459169377","phoneNumber":"+1.934.506.1355","created_by":1,"updated_by":1,"created_at":"2021-09-03T13:34:18.000000Z","updated_at":"2021-09-03T14:00:41.000000Z"},"message":"Phone book details retrieved successfully."}
 
 6) Edit
+
  	Url : {Your_Path}/api/phonebooks/{phonebook}
+
  	Method - PUT|PATCH
+
  	Body : row
- 	Data : {
+
+ 	Data : 
+
+ 			{
 			    "firstName":"Parth",
 			    "lastName":"Patel",
 			    "email":"webdeveloper.parth@gmail.com",
@@ -138,15 +183,23 @@
 			    "phoneNumber" : "+1.934.506.1355"
 			}
 
-	The command will return the following format: {"success":true,"data":{"id":6,"firstName":"Parth","lastName":"Patel","email":"webdeveloper.parth@gmail.com","mobileNumber":"07459169377","phoneNumber":"+1.934.506.1355","created_by":1,"updated_by":1,"created_at":"2021-09-03T13:34:18.000000Z","updated_at":"2021-09-03T14:00:41.000000Z"},"message":"Phone book updated successfully."}
+	The command will return the following format: 
+	
+			{"success":true,"data":{"id":6,"firstName":"Parth","lastName":"Patel","email":"webdeveloper.parth@gmail.com","mobileNumber":"07459169377","phoneNumber":"+1.934.506.1355","created_by":1,"updated_by":1,"created_at":"2021-09-03T13:34:18.000000Z","updated_at":"2021-09-03T14:00:41.000000Z"},"message":"Phone book updated successfully."}
 
 7) Delete
+
  	Url : {Your_Path}/api/phonebooks/{phonebook}
+
  	Method - DELETE
+
  	Body : row
+
  	Data : null
 
-	The command will return the following format: {"success":true,"message":"Phone book deleted successfully."}
+	The command will return the following format: 
+
+		{"success":true,"message":"Phone book deleted successfully."}
 
 
-## Postman 
+## Postman (https://github.com/onfuro/laravel-api/blob/main/postman_collection/Laravel-Test-Api.postman_collection.json)
