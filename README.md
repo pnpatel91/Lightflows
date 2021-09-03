@@ -21,13 +21,19 @@
 ## End Point Url
 
  |POST      | api/register |
+ 
  |GET|HEAD  | api/user |
+ 
  |POST | api/login | 
 
  |GET|HEAD  | api/phonebooks  | phonebooks.index |
+ 
  |POST      | api/phonebooks  | phonebooks.store | 
+ 
  |GET|HEAD  | api/phonebooks/{phonebook}  | phonebooks.show | 
+ 
  |PUT|PATCH | api/phonebooks/{phonebook}  | phonebooks.update |
+ 
  |DELETE    | api/phonebooks/{phonebook}  | phonebooks.destroy |
 
 
