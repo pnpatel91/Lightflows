@@ -204,4 +204,4 @@
 
 ## Postman 
 	
-	(https://github.com/parth11991/Lightflows/tree/main/postman_collection)
+	https://github.com/parth11991/Lightflows/blob/main/postman_collection/Laravel-Test-Api.postman_collection.json
