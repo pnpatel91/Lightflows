@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "a5ecf483-f152-461c-8441-e6b1fc2323f9",
+		"_postman_id": "3fd5e84b-0c96-4ca9-a1bd-38ffb63e6275",
 		"name": "Laravel-Test-Api",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -20,13 +20,14 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost/laravel_api/api/login",
+					"raw": "http://localhost/Lightflows/public/api/login",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"path": [
-						"laravel_api",
+						"Lightflows",
+						"public",
 						"api",
 						"login"
 					]
@@ -49,13 +50,14 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost/laravel_api/api/register",
+					"raw": "http://localhost/Lightflows/public/api/register",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"path": [
-						"laravel_api",
+						"Lightflows",
+						"public",
 						"api",
 						"register"
 					]
@@ -71,7 +73,7 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiZTE3M2JmYTcyMGVhMzUyOWZhNzM1ZWY5YWUxMjlkNDJjZGI5MGY5ZTY2NGEwOTRhODYwYjYxOGRhYWQ1YmY2ZTAwNTMwNjU5YjgzNzkyNjkiLCJpYXQiOjE2MzA2NzUxMjQuNjE4NzgsIm5iZiI6MTYzMDY3NTEyNC42MTg3ODQsImV4cCI6MTY2MjIxMTEyNC42MDk3NTEsInN1YiI6IjEiLCJzY29wZXMiOltdfQ.4_HhaPrVHuF12hPSgDu_u0MH9jbFe2ERTZhs0djjaeiK7Rp9kYh7WNqRwHJXPNqOWOtYY0p-1TwVHiM1pHKpLnPlME7VvSm2axkJ4tp3wpBvhM7cUkqS68VUKq43I0ooSGuVAIzVoh0OBMcwzYO7xs62U8ZcdQ-2bU2TJ7tirZ-fCqgY1mB8T7R6JjAnzPVjpClwXfd4qHCXYuh4S39_kUlXutNU2OTsEm6zQYszXtlwLnUzbUfb1To35v7d_j-oVF56eJN4EzCd553VaLxQFiN2Ip10V3ZJRRX6G0DyeuaS5zoc1w5XSU1j6-tE9_ulS3esO8IRILVDe0RH2kbxI47WRcy2bKpL7Bj-yhyuI6lGihf1Q9ap85idNotW8lB1kJKjL9ttifZmjWbJ9y0th9TQe4g_gOXYuWOYdFn-AGGdrvg5AeiD2EwVyNIMO-zatnQP4HHCXEK8WUxo_XJX9b9-oBYvzCeWMIgz5q1x6C-GEQSfky1ojtpFvEBKWM1xtwi6StVxEiJQrt6ZjzVZONNaVv3_TRrU2XPShJD2K-TekEtmG3QDFg4rlzc0SfE2g1epFRaCx2iomug0u-SIJzeiGyKFfcCdhDe1HlZoffYoD6gsKyHGcQFng5QnobZn1Udi0KiJNDRU_NLpxobxKb_MWStV0qHnahyD3_WjpIQ",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNzk2YmU2NzI0ZTcxMGEwN2MzMzkyZTQ1MzhjZjA3ODU5NzI1YzYyNzQ5N2M3ODNiOWY0NGQ3ZTQxYTdjYTQ3NDcxYjBkZTQyMWFhNDk5YTgiLCJpYXQiOjE2MzEwNDY3ODYuMTk3NTk1LCJuYmYiOjE2MzEwNDY3ODYuMTk3NjAxLCJleHAiOjE2NjI1ODI3ODYuMTg4MjMsInN1YiI6IjEiLCJzY29wZXMiOltdfQ.IfQdGnbRhO6iU0_6pVc9dKxLKgmg6DA6bq8S69Cp03YM4k6MaBE1C1UGqaOknseq0ZpYbRYtYkdAPnQA54kQJYQFP2cntIUKaqHT6VwDbsjxtFYUHGle9V0nMcVXDxcDnjQhUZck69Qg73QYsNZih5rCiYWZP-8_hQ23GnwKhGm7teFFn1V-_a7U9t3gLvPMhX0bjYtdIsOmCx94NOFg9jIDL5_LUcU8r7WfZX6yV4a7uUJG6n_qebrEAzRv3dpPieR2vzPAm2p8W79Pd1xbhzFua0Z4_siZQ0SSYnDZPMcLSuxt2e9qCsc9JwDZlDs175tTzVUFBlZownpZ2dkG-akz_r__INFQOdTvrV5A7uTBrj4r1uvwsuMH29XQC_yFowG5DSw1LRxXUvL_-m-TAlZAYXUz4deQbbzI1r5acVoV9o5BvnhtOU8WHNOyT8aq55SbPiNZiJflOrxwWOtH70KhKrC_Srp8LHuBiGaZXMh_ZwqxV8SRTMD5ShPsjiagm57x1BoepaR_3RS71OioH-4Wol472Tg3H07Ptmqi5YcbQ_pNaovopDJuwJPjxlpvCzA9e0iZxELyPaWBnspMrjNCyTZauNjhUKXAbpnae1OsGIMx56IS2MRrvwALNXqxL19RWWdl8suhNlQ8xMpNvEH8OnxXNi7Jwg1YOAvC5B8",
 							"type": "string"
 						}
 					]
@@ -88,15 +90,59 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost/laravel_api/api/phonebooks",
+					"raw": "http://localhost/Lightflows/public/api/phonebooks",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"path": [
-						"laravel_api",
+						"Lightflows",
+						"public",
 						"api",
 						"phonebooks"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User Details",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNzk2YmU2NzI0ZTcxMGEwN2MzMzkyZTQ1MzhjZjA3ODU5NzI1YzYyNzQ5N2M3ODNiOWY0NGQ3ZTQxYTdjYTQ3NDcxYjBkZTQyMWFhNDk5YTgiLCJpYXQiOjE2MzEwNDY3ODYuMTk3NTk1LCJuYmYiOjE2MzEwNDY3ODYuMTk3NjAxLCJleHAiOjE2NjI1ODI3ODYuMTg4MjMsInN1YiI6IjEiLCJzY29wZXMiOltdfQ.IfQdGnbRhO6iU0_6pVc9dKxLKgmg6DA6bq8S69Cp03YM4k6MaBE1C1UGqaOknseq0ZpYbRYtYkdAPnQA54kQJYQFP2cntIUKaqHT6VwDbsjxtFYUHGle9V0nMcVXDxcDnjQhUZck69Qg73QYsNZih5rCiYWZP-8_hQ23GnwKhGm7teFFn1V-_a7U9t3gLvPMhX0bjYtdIsOmCx94NOFg9jIDL5_LUcU8r7WfZX6yV4a7uUJG6n_qebrEAzRv3dpPieR2vzPAm2p8W79Pd1xbhzFua0Z4_siZQ0SSYnDZPMcLSuxt2e9qCsc9JwDZlDs175tTzVUFBlZownpZ2dkG-akz_r__INFQOdTvrV5A7uTBrj4r1uvwsuMH29XQC_yFowG5DSw1LRxXUvL_-m-TAlZAYXUz4deQbbzI1r5acVoV9o5BvnhtOU8WHNOyT8aq55SbPiNZiJflOrxwWOtH70KhKrC_Srp8LHuBiGaZXMh_ZwqxV8SRTMD5ShPsjiagm57x1BoepaR_3RS71OioH-4Wol472Tg3H07Ptmqi5YcbQ_pNaovopDJuwJPjxlpvCzA9e0iZxELyPaWBnspMrjNCyTZauNjhUKXAbpnae1OsGIMx56IS2MRrvwALNXqxL19RWWdl8suhNlQ8xMpNvEH8OnxXNi7Jwg1YOAvC5B8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/Lightflows/public/api/user",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"Lightflows",
+						"public",
+						"api",
+						"user"
 					]
 				}
 			},
@@ -113,7 +159,7 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiZTE3M2JmYTcyMGVhMzUyOWZhNzM1ZWY5YWUxMjlkNDJjZGI5MGY5ZTY2NGEwOTRhODYwYjYxOGRhYWQ1YmY2ZTAwNTMwNjU5YjgzNzkyNjkiLCJpYXQiOjE2MzA2NzUxMjQuNjE4NzgsIm5iZiI6MTYzMDY3NTEyNC42MTg3ODQsImV4cCI6MTY2MjIxMTEyNC42MDk3NTEsInN1YiI6IjEiLCJzY29wZXMiOltdfQ.4_HhaPrVHuF12hPSgDu_u0MH9jbFe2ERTZhs0djjaeiK7Rp9kYh7WNqRwHJXPNqOWOtYY0p-1TwVHiM1pHKpLnPlME7VvSm2axkJ4tp3wpBvhM7cUkqS68VUKq43I0ooSGuVAIzVoh0OBMcwzYO7xs62U8ZcdQ-2bU2TJ7tirZ-fCqgY1mB8T7R6JjAnzPVjpClwXfd4qHCXYuh4S39_kUlXutNU2OTsEm6zQYszXtlwLnUzbUfb1To35v7d_j-oVF56eJN4EzCd553VaLxQFiN2Ip10V3ZJRRX6G0DyeuaS5zoc1w5XSU1j6-tE9_ulS3esO8IRILVDe0RH2kbxI47WRcy2bKpL7Bj-yhyuI6lGihf1Q9ap85idNotW8lB1kJKjL9ttifZmjWbJ9y0th9TQe4g_gOXYuWOYdFn-AGGdrvg5AeiD2EwVyNIMO-zatnQP4HHCXEK8WUxo_XJX9b9-oBYvzCeWMIgz5q1x6C-GEQSfky1ojtpFvEBKWM1xtwi6StVxEiJQrt6ZjzVZONNaVv3_TRrU2XPShJD2K-TekEtmG3QDFg4rlzc0SfE2g1epFRaCx2iomug0u-SIJzeiGyKFfcCdhDe1HlZoffYoD6gsKyHGcQFng5QnobZn1Udi0KiJNDRU_NLpxobxKb_MWStV0qHnahyD3_WjpIQ",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNzk2YmU2NzI0ZTcxMGEwN2MzMzkyZTQ1MzhjZjA3ODU5NzI1YzYyNzQ5N2M3ODNiOWY0NGQ3ZTQxYTdjYTQ3NDcxYjBkZTQyMWFhNDk5YTgiLCJpYXQiOjE2MzEwNDY3ODYuMTk3NTk1LCJuYmYiOjE2MzEwNDY3ODYuMTk3NjAxLCJleHAiOjE2NjI1ODI3ODYuMTg4MjMsInN1YiI6IjEiLCJzY29wZXMiOltdfQ.IfQdGnbRhO6iU0_6pVc9dKxLKgmg6DA6bq8S69Cp03YM4k6MaBE1C1UGqaOknseq0ZpYbRYtYkdAPnQA54kQJYQFP2cntIUKaqHT6VwDbsjxtFYUHGle9V0nMcVXDxcDnjQhUZck69Qg73QYsNZih5rCiYWZP-8_hQ23GnwKhGm7teFFn1V-_a7U9t3gLvPMhX0bjYtdIsOmCx94NOFg9jIDL5_LUcU8r7WfZX6yV4a7uUJG6n_qebrEAzRv3dpPieR2vzPAm2p8W79Pd1xbhzFua0Z4_siZQ0SSYnDZPMcLSuxt2e9qCsc9JwDZlDs175tTzVUFBlZownpZ2dkG-akz_r__INFQOdTvrV5A7uTBrj4r1uvwsuMH29XQC_yFowG5DSw1LRxXUvL_-m-TAlZAYXUz4deQbbzI1r5acVoV9o5BvnhtOU8WHNOyT8aq55SbPiNZiJflOrxwWOtH70KhKrC_Srp8LHuBiGaZXMh_ZwqxV8SRTMD5ShPsjiagm57x1BoepaR_3RS71OioH-4Wol472Tg3H07Ptmqi5YcbQ_pNaovopDJuwJPjxlpvCzA9e0iZxELyPaWBnspMrjNCyTZauNjhUKXAbpnae1OsGIMx56IS2MRrvwALNXqxL19RWWdl8suhNlQ8xMpNvEH8OnxXNi7Jwg1YOAvC5B8",
 							"type": "string"
 						}
 					]
@@ -137,13 +183,14 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost/laravel_api/api/phonebooks?firstName=par",
+					"raw": "http://localhost/Lightflows/public/api/phonebooks?firstName=par",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"path": [
-						"laravel_api",
+						"Lightflows",
+						"public",
 						"api",
 						"phonebooks"
 					],
@@ -168,7 +215,7 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiZTE3M2JmYTcyMGVhMzUyOWZhNzM1ZWY5YWUxMjlkNDJjZGI5MGY5ZTY2NGEwOTRhODYwYjYxOGRhYWQ1YmY2ZTAwNTMwNjU5YjgzNzkyNjkiLCJpYXQiOjE2MzA2NzUxMjQuNjE4NzgsIm5iZiI6MTYzMDY3NTEyNC42MTg3ODQsImV4cCI6MTY2MjIxMTEyNC42MDk3NTEsInN1YiI6IjEiLCJzY29wZXMiOltdfQ.4_HhaPrVHuF12hPSgDu_u0MH9jbFe2ERTZhs0djjaeiK7Rp9kYh7WNqRwHJXPNqOWOtYY0p-1TwVHiM1pHKpLnPlME7VvSm2axkJ4tp3wpBvhM7cUkqS68VUKq43I0ooSGuVAIzVoh0OBMcwzYO7xs62U8ZcdQ-2bU2TJ7tirZ-fCqgY1mB8T7R6JjAnzPVjpClwXfd4qHCXYuh4S39_kUlXutNU2OTsEm6zQYszXtlwLnUzbUfb1To35v7d_j-oVF56eJN4EzCd553VaLxQFiN2Ip10V3ZJRRX6G0DyeuaS5zoc1w5XSU1j6-tE9_ulS3esO8IRILVDe0RH2kbxI47WRcy2bKpL7Bj-yhyuI6lGihf1Q9ap85idNotW8lB1kJKjL9ttifZmjWbJ9y0th9TQe4g_gOXYuWOYdFn-AGGdrvg5AeiD2EwVyNIMO-zatnQP4HHCXEK8WUxo_XJX9b9-oBYvzCeWMIgz5q1x6C-GEQSfky1ojtpFvEBKWM1xtwi6StVxEiJQrt6ZjzVZONNaVv3_TRrU2XPShJD2K-TekEtmG3QDFg4rlzc0SfE2g1epFRaCx2iomug0u-SIJzeiGyKFfcCdhDe1HlZoffYoD6gsKyHGcQFng5QnobZn1Udi0KiJNDRU_NLpxobxKb_MWStV0qHnahyD3_WjpIQ",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNzk2YmU2NzI0ZTcxMGEwN2MzMzkyZTQ1MzhjZjA3ODU5NzI1YzYyNzQ5N2M3ODNiOWY0NGQ3ZTQxYTdjYTQ3NDcxYjBkZTQyMWFhNDk5YTgiLCJpYXQiOjE2MzEwNDY3ODYuMTk3NTk1LCJuYmYiOjE2MzEwNDY3ODYuMTk3NjAxLCJleHAiOjE2NjI1ODI3ODYuMTg4MjMsInN1YiI6IjEiLCJzY29wZXMiOltdfQ.IfQdGnbRhO6iU0_6pVc9dKxLKgmg6DA6bq8S69Cp03YM4k6MaBE1C1UGqaOknseq0ZpYbRYtYkdAPnQA54kQJYQFP2cntIUKaqHT6VwDbsjxtFYUHGle9V0nMcVXDxcDnjQhUZck69Qg73QYsNZih5rCiYWZP-8_hQ23GnwKhGm7teFFn1V-_a7U9t3gLvPMhX0bjYtdIsOmCx94NOFg9jIDL5_LUcU8r7WfZX6yV4a7uUJG6n_qebrEAzRv3dpPieR2vzPAm2p8W79Pd1xbhzFua0Z4_siZQ0SSYnDZPMcLSuxt2e9qCsc9JwDZlDs175tTzVUFBlZownpZ2dkG-akz_r__INFQOdTvrV5A7uTBrj4r1uvwsuMH29XQC_yFowG5DSw1LRxXUvL_-m-TAlZAYXUz4deQbbzI1r5acVoV9o5BvnhtOU8WHNOyT8aq55SbPiNZiJflOrxwWOtH70KhKrC_Srp8LHuBiGaZXMh_ZwqxV8SRTMD5ShPsjiagm57x1BoepaR_3RS71OioH-4Wol472Tg3H07Ptmqi5YcbQ_pNaovopDJuwJPjxlpvCzA9e0iZxELyPaWBnspMrjNCyTZauNjhUKXAbpnae1OsGIMx56IS2MRrvwALNXqxL19RWWdl8suhNlQ8xMpNvEH8OnxXNi7Jwg1YOAvC5B8",
 							"type": "string"
 						}
 					]
@@ -185,13 +232,14 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost/laravel_api/api/phonebooks",
+					"raw": "http://localhost/Lightflows/public/api/phonebooks",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"path": [
-						"laravel_api",
+						"Lightflows",
+						"public",
 						"api",
 						"phonebooks"
 					]
@@ -207,7 +255,7 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiZTE3M2JmYTcyMGVhMzUyOWZhNzM1ZWY5YWUxMjlkNDJjZGI5MGY5ZTY2NGEwOTRhODYwYjYxOGRhYWQ1YmY2ZTAwNTMwNjU5YjgzNzkyNjkiLCJpYXQiOjE2MzA2NzUxMjQuNjE4NzgsIm5iZiI6MTYzMDY3NTEyNC42MTg3ODQsImV4cCI6MTY2MjIxMTEyNC42MDk3NTEsInN1YiI6IjEiLCJzY29wZXMiOltdfQ.4_HhaPrVHuF12hPSgDu_u0MH9jbFe2ERTZhs0djjaeiK7Rp9kYh7WNqRwHJXPNqOWOtYY0p-1TwVHiM1pHKpLnPlME7VvSm2axkJ4tp3wpBvhM7cUkqS68VUKq43I0ooSGuVAIzVoh0OBMcwzYO7xs62U8ZcdQ-2bU2TJ7tirZ-fCqgY1mB8T7R6JjAnzPVjpClwXfd4qHCXYuh4S39_kUlXutNU2OTsEm6zQYszXtlwLnUzbUfb1To35v7d_j-oVF56eJN4EzCd553VaLxQFiN2Ip10V3ZJRRX6G0DyeuaS5zoc1w5XSU1j6-tE9_ulS3esO8IRILVDe0RH2kbxI47WRcy2bKpL7Bj-yhyuI6lGihf1Q9ap85idNotW8lB1kJKjL9ttifZmjWbJ9y0th9TQe4g_gOXYuWOYdFn-AGGdrvg5AeiD2EwVyNIMO-zatnQP4HHCXEK8WUxo_XJX9b9-oBYvzCeWMIgz5q1x6C-GEQSfky1ojtpFvEBKWM1xtwi6StVxEiJQrt6ZjzVZONNaVv3_TRrU2XPShJD2K-TekEtmG3QDFg4rlzc0SfE2g1epFRaCx2iomug0u-SIJzeiGyKFfcCdhDe1HlZoffYoD6gsKyHGcQFng5QnobZn1Udi0KiJNDRU_NLpxobxKb_MWStV0qHnahyD3_WjpIQ",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNzk2YmU2NzI0ZTcxMGEwN2MzMzkyZTQ1MzhjZjA3ODU5NzI1YzYyNzQ5N2M3ODNiOWY0NGQ3ZTQxYTdjYTQ3NDcxYjBkZTQyMWFhNDk5YTgiLCJpYXQiOjE2MzEwNDY3ODYuMTk3NTk1LCJuYmYiOjE2MzEwNDY3ODYuMTk3NjAxLCJleHAiOjE2NjI1ODI3ODYuMTg4MjMsInN1YiI6IjEiLCJzY29wZXMiOltdfQ.IfQdGnbRhO6iU0_6pVc9dKxLKgmg6DA6bq8S69Cp03YM4k6MaBE1C1UGqaOknseq0ZpYbRYtYkdAPnQA54kQJYQFP2cntIUKaqHT6VwDbsjxtFYUHGle9V0nMcVXDxcDnjQhUZck69Qg73QYsNZih5rCiYWZP-8_hQ23GnwKhGm7teFFn1V-_a7U9t3gLvPMhX0bjYtdIsOmCx94NOFg9jIDL5_LUcU8r7WfZX6yV4a7uUJG6n_qebrEAzRv3dpPieR2vzPAm2p8W79Pd1xbhzFua0Z4_siZQ0SSYnDZPMcLSuxt2e9qCsc9JwDZlDs175tTzVUFBlZownpZ2dkG-akz_r__INFQOdTvrV5A7uTBrj4r1uvwsuMH29XQC_yFowG5DSw1LRxXUvL_-m-TAlZAYXUz4deQbbzI1r5acVoV9o5BvnhtOU8WHNOyT8aq55SbPiNZiJflOrxwWOtH70KhKrC_Srp8LHuBiGaZXMh_ZwqxV8SRTMD5ShPsjiagm57x1BoepaR_3RS71OioH-4Wol472Tg3H07Ptmqi5YcbQ_pNaovopDJuwJPjxlpvCzA9e0iZxELyPaWBnspMrjNCyTZauNjhUKXAbpnae1OsGIMx56IS2MRrvwALNXqxL19RWWdl8suhNlQ8xMpNvEH8OnxXNi7Jwg1YOAvC5B8",
 							"type": "string"
 						}
 					]
@@ -224,13 +272,14 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost/laravel_api/api/phonebooks/6",
+					"raw": "http://localhost/Lightflows/public/api/phonebooks/6",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"path": [
-						"laravel_api",
+						"Lightflows",
+						"public",
 						"api",
 						"phonebooks",
 						"6"
@@ -250,7 +299,7 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiZTE3M2JmYTcyMGVhMzUyOWZhNzM1ZWY5YWUxMjlkNDJjZGI5MGY5ZTY2NGEwOTRhODYwYjYxOGRhYWQ1YmY2ZTAwNTMwNjU5YjgzNzkyNjkiLCJpYXQiOjE2MzA2NzUxMjQuNjE4NzgsIm5iZiI6MTYzMDY3NTEyNC42MTg3ODQsImV4cCI6MTY2MjIxMTEyNC42MDk3NTEsInN1YiI6IjEiLCJzY29wZXMiOltdfQ.4_HhaPrVHuF12hPSgDu_u0MH9jbFe2ERTZhs0djjaeiK7Rp9kYh7WNqRwHJXPNqOWOtYY0p-1TwVHiM1pHKpLnPlME7VvSm2axkJ4tp3wpBvhM7cUkqS68VUKq43I0ooSGuVAIzVoh0OBMcwzYO7xs62U8ZcdQ-2bU2TJ7tirZ-fCqgY1mB8T7R6JjAnzPVjpClwXfd4qHCXYuh4S39_kUlXutNU2OTsEm6zQYszXtlwLnUzbUfb1To35v7d_j-oVF56eJN4EzCd553VaLxQFiN2Ip10V3ZJRRX6G0DyeuaS5zoc1w5XSU1j6-tE9_ulS3esO8IRILVDe0RH2kbxI47WRcy2bKpL7Bj-yhyuI6lGihf1Q9ap85idNotW8lB1kJKjL9ttifZmjWbJ9y0th9TQe4g_gOXYuWOYdFn-AGGdrvg5AeiD2EwVyNIMO-zatnQP4HHCXEK8WUxo_XJX9b9-oBYvzCeWMIgz5q1x6C-GEQSfky1ojtpFvEBKWM1xtwi6StVxEiJQrt6ZjzVZONNaVv3_TRrU2XPShJD2K-TekEtmG3QDFg4rlzc0SfE2g1epFRaCx2iomug0u-SIJzeiGyKFfcCdhDe1HlZoffYoD6gsKyHGcQFng5QnobZn1Udi0KiJNDRU_NLpxobxKb_MWStV0qHnahyD3_WjpIQ",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNzk2YmU2NzI0ZTcxMGEwN2MzMzkyZTQ1MzhjZjA3ODU5NzI1YzYyNzQ5N2M3ODNiOWY0NGQ3ZTQxYTdjYTQ3NDcxYjBkZTQyMWFhNDk5YTgiLCJpYXQiOjE2MzEwNDY3ODYuMTk3NTk1LCJuYmYiOjE2MzEwNDY3ODYuMTk3NjAxLCJleHAiOjE2NjI1ODI3ODYuMTg4MjMsInN1YiI6IjEiLCJzY29wZXMiOltdfQ.IfQdGnbRhO6iU0_6pVc9dKxLKgmg6DA6bq8S69Cp03YM4k6MaBE1C1UGqaOknseq0ZpYbRYtYkdAPnQA54kQJYQFP2cntIUKaqHT6VwDbsjxtFYUHGle9V0nMcVXDxcDnjQhUZck69Qg73QYsNZih5rCiYWZP-8_hQ23GnwKhGm7teFFn1V-_a7U9t3gLvPMhX0bjYtdIsOmCx94NOFg9jIDL5_LUcU8r7WfZX6yV4a7uUJG6n_qebrEAzRv3dpPieR2vzPAm2p8W79Pd1xbhzFua0Z4_siZQ0SSYnDZPMcLSuxt2e9qCsc9JwDZlDs175tTzVUFBlZownpZ2dkG-akz_r__INFQOdTvrV5A7uTBrj4r1uvwsuMH29XQC_yFowG5DSw1LRxXUvL_-m-TAlZAYXUz4deQbbzI1r5acVoV9o5BvnhtOU8WHNOyT8aq55SbPiNZiJflOrxwWOtH70KhKrC_Srp8LHuBiGaZXMh_ZwqxV8SRTMD5ShPsjiagm57x1BoepaR_3RS71OioH-4Wol472Tg3H07Ptmqi5YcbQ_pNaovopDJuwJPjxlpvCzA9e0iZxELyPaWBnspMrjNCyTZauNjhUKXAbpnae1OsGIMx56IS2MRrvwALNXqxL19RWWdl8suhNlQ8xMpNvEH8OnxXNi7Jwg1YOAvC5B8",
 							"type": "string"
 						}
 					]
@@ -267,13 +316,14 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost/laravel_api/api/phonebooks/6",
+					"raw": "http://localhost/Lightflows/public/api/phonebooks/6",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"path": [
-						"laravel_api",
+						"Lightflows",
+						"public",
 						"api",
 						"phonebooks",
 						"6"
@@ -290,7 +340,7 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiZTE3M2JmYTcyMGVhMzUyOWZhNzM1ZWY5YWUxMjlkNDJjZGI5MGY5ZTY2NGEwOTRhODYwYjYxOGRhYWQ1YmY2ZTAwNTMwNjU5YjgzNzkyNjkiLCJpYXQiOjE2MzA2NzUxMjQuNjE4NzgsIm5iZiI6MTYzMDY3NTEyNC42MTg3ODQsImV4cCI6MTY2MjIxMTEyNC42MDk3NTEsInN1YiI6IjEiLCJzY29wZXMiOltdfQ.4_HhaPrVHuF12hPSgDu_u0MH9jbFe2ERTZhs0djjaeiK7Rp9kYh7WNqRwHJXPNqOWOtYY0p-1TwVHiM1pHKpLnPlME7VvSm2axkJ4tp3wpBvhM7cUkqS68VUKq43I0ooSGuVAIzVoh0OBMcwzYO7xs62U8ZcdQ-2bU2TJ7tirZ-fCqgY1mB8T7R6JjAnzPVjpClwXfd4qHCXYuh4S39_kUlXutNU2OTsEm6zQYszXtlwLnUzbUfb1To35v7d_j-oVF56eJN4EzCd553VaLxQFiN2Ip10V3ZJRRX6G0DyeuaS5zoc1w5XSU1j6-tE9_ulS3esO8IRILVDe0RH2kbxI47WRcy2bKpL7Bj-yhyuI6lGihf1Q9ap85idNotW8lB1kJKjL9ttifZmjWbJ9y0th9TQe4g_gOXYuWOYdFn-AGGdrvg5AeiD2EwVyNIMO-zatnQP4HHCXEK8WUxo_XJX9b9-oBYvzCeWMIgz5q1x6C-GEQSfky1ojtpFvEBKWM1xtwi6StVxEiJQrt6ZjzVZONNaVv3_TRrU2XPShJD2K-TekEtmG3QDFg4rlzc0SfE2g1epFRaCx2iomug0u-SIJzeiGyKFfcCdhDe1HlZoffYoD6gsKyHGcQFng5QnobZn1Udi0KiJNDRU_NLpxobxKb_MWStV0qHnahyD3_WjpIQ",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNzk2YmU2NzI0ZTcxMGEwN2MzMzkyZTQ1MzhjZjA3ODU5NzI1YzYyNzQ5N2M3ODNiOWY0NGQ3ZTQxYTdjYTQ3NDcxYjBkZTQyMWFhNDk5YTgiLCJpYXQiOjE2MzEwNDY3ODYuMTk3NTk1LCJuYmYiOjE2MzEwNDY3ODYuMTk3NjAxLCJleHAiOjE2NjI1ODI3ODYuMTg4MjMsInN1YiI6IjEiLCJzY29wZXMiOltdfQ.IfQdGnbRhO6iU0_6pVc9dKxLKgmg6DA6bq8S69Cp03YM4k6MaBE1C1UGqaOknseq0ZpYbRYtYkdAPnQA54kQJYQFP2cntIUKaqHT6VwDbsjxtFYUHGle9V0nMcVXDxcDnjQhUZck69Qg73QYsNZih5rCiYWZP-8_hQ23GnwKhGm7teFFn1V-_a7U9t3gLvPMhX0bjYtdIsOmCx94NOFg9jIDL5_LUcU8r7WfZX6yV4a7uUJG6n_qebrEAzRv3dpPieR2vzPAm2p8W79Pd1xbhzFua0Z4_siZQ0SSYnDZPMcLSuxt2e9qCsc9JwDZlDs175tTzVUFBlZownpZ2dkG-akz_r__INFQOdTvrV5A7uTBrj4r1uvwsuMH29XQC_yFowG5DSw1LRxXUvL_-m-TAlZAYXUz4deQbbzI1r5acVoV9o5BvnhtOU8WHNOyT8aq55SbPiNZiJflOrxwWOtH70KhKrC_Srp8LHuBiGaZXMh_ZwqxV8SRTMD5ShPsjiagm57x1BoepaR_3RS71OioH-4Wol472Tg3H07Ptmqi5YcbQ_pNaovopDJuwJPjxlpvCzA9e0iZxELyPaWBnspMrjNCyTZauNjhUKXAbpnae1OsGIMx56IS2MRrvwALNXqxL19RWWdl8suhNlQ8xMpNvEH8OnxXNi7Jwg1YOAvC5B8",
 							"type": "string"
 						}
 					]
@@ -307,13 +357,14 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost/laravel_api/api/phonebooks/5",
+					"raw": "http://localhost/Lightflows/public/api/phonebooks/5",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"path": [
-						"laravel_api",
+						"Lightflows",
+						"public",
 						"api",
 						"phonebooks",
 						"5"

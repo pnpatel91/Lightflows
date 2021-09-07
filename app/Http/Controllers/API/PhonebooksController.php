@@ -53,16 +53,6 @@ class PhonebooksController extends Controller
     }
 
     /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
-    {
-        //
-    }
-
-    /**
      * Store a newly created resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
@@ -117,9 +107,6 @@ class PhonebooksController extends Controller
 
             DB::rollBack();
 
-            //Session::flash('failed', $exception->getMessage() . ' ' . $exception->getLine());
-            /*return redirect()->back()->withInput($request->all());*/
-
             return response()->json([
                 'error' => $exception->getMessage() . ' ' . $exception->getLine() // for status 200
             ]);
@@ -153,17 +140,6 @@ class PhonebooksController extends Controller
         ];
 
         return response()->json($response, 200);
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  \App\Models\phonebooks  $phonebook
-     * @return \Illuminate\Http\Response
-     */
-    public function edit(phonebooks $phonebook)
-    {
-        //
     }
 
     /**
