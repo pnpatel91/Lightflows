@@ -14,8 +14,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::post('register', 'App\Http\Controllers\API\UserController@register');
-Route::post('login', 'App\Http\Controllers\API\UserController@login');
+Route::post('register', 'App\Http\Controllers\API\UserController@register')->name('register');
+Route::post('login', 'App\Http\Controllers\API\UserController@login')->name('login');
 
 Route::middleware('auth:api')->group( function () {
     Route::apiResource('phonebooks','App\Http\Controllers\API\PhonebooksController');

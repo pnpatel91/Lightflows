@@ -6,6 +6,8 @@ use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Foundation\Testing\WithFaker;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Laravel\Passport\HasApiTokens;
+use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
+use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Tests\TestCase;
 
 use App\Models\User;
@@ -15,17 +17,6 @@ class PhonebooksTest extends TestCase
 {
 
     use HasApiTokens, HasFactory, RefreshDatabase;
-
-    protected function authenticate(){
-        $user = User::create([
-            'name' => 'test',
-            'email' => 'test@gmail.com',
-            'password' => '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi',
-        ]);
-        $this->user = $user;
-        $token = $user->createToken('MyApp')->accessToken;;
-        return $token;
-    }
 
     /**
      * Test the create route.
@@ -43,13 +34,13 @@ class PhonebooksTest extends TestCase
             "email"=> "admin@gmail.com",
             "mobileNumber"=> "07459169377"
         ];
-
-        $this->json('POST', 'phonebooks', $Data, ['Accept' => 'application/json'])
-            ->assertStatus(201)
+        $this->json('POST', 'api/phonebooks/', $Data, ['Accept' => 'application/json'])
+            ->assertStatus(200)
             ->assertJson([
                 "data" => $Data,
                 "message" => "Created successfully"
-            ]);
+            ]
+            );
     }
 
     /**
@@ -97,7 +88,11 @@ class PhonebooksTest extends TestCase
         ]);
 
         $this->json('GET', 'api/phonebooks/' . $phonebooks->id, [], ['Accept' => 'application/json'])
-            ->assertStatus(204);
+            ->assertStatus(200)
+            ->assertJson([
+                "data" => $phonebooks,
+                "message" => "Successfully"
+            ]);
     }
 
     /**
@@ -117,7 +112,11 @@ class PhonebooksTest extends TestCase
         ]);
 
         $this->json('DELETE', 'api/phonebooks/' . $phonebooks->id, [], ['Accept' => 'application/json'])
-            ->assertStatus(204);
+            ->assertStatus(200)
+            ->assertJson([
+                "data" => $phonebooks,
+                "message" => "Successfully"
+            ]);
     }
 
 }
